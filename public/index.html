@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    
+</head>
+<body>
+
+    <h1>Users Survey</h1>
+    <fieldset>
+        <div>
+            <form  class="posting_form">
+                <div>
+                    <label for="userName">
+                        Your Name: 
+                    </label>
+                    <input type="text" id="userName" name="userName" />
+                </div>
+                <div>
+                    <label for="dojoLocation">
+                        Dojo Location:
+                    </label>
+                    <select id="dojoLocation" name="dojoLocation">
+                        <option value="heredia">Heredia</option>
+                        <option value="sanJose">San Jose</option>
+                        <option value="virtual">Virtual</option>
+
+                    </select>
+                </div>
+                <div>
+                    <label for="favoriteLanguage">
+                        Dojo Location:
+                    </label>
+                    <select id="favoriteLanguage" name="favoriteLanguage">
+                        <option value="javaScript">Java Script</option>
+                        <option value="java">Java</option>
+                        <option value="python">Python</option>
+
+                    </select>
+                </div>
+                <div>
+                    <label for="comment">
+                        Comment (optional):
+                    </label>
+                    <textarea  id="comment" name="comment"></textarea> 
+                </div>
+                <button type="submit" >
+                    Add user
+                </button>
+            </form>
+
+        </div>
+
+
+    </fieldset>
+    <fieldset>
+        <!-- <div>
+            <% for (i=0; i<result.length-1; i++ ) %>
+                <p>
+                    <%=i.userName %>
+                </p>
+                <p>
+                    <%=i.dojoLocation %>
+                </p>
+                <p>
+                    <%=i.favoriteLanguage %>
+                </p>
+                <p>
+                    <%=i.comment %>
+                </p>
+
+                <p>
+                    <%= data.msg %>
+                </p>
+
+        </div> -->
+        <div class="userInfo">
+        </div>
+        <div class="number">
+
+        </div>
+
+
+
+    </fieldset>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type ="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
